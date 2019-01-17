@@ -3,7 +3,7 @@
     "theme_color" : "#075b51",
     "background_color" : "#F7F8F9",
     "display" : "standalone",
-    "start_url" : "https://whatschat.ml/index.html",
+    "start_url" : "https://whatschat.ml",
     "lang" : "",
     "orientation" : "portrait",
     "description" : "helps to directly start conversation with unsaved whatsapp contacts ",
