@@ -1,26 +1,23 @@
-{
-  "short_name": "Whatschat",
-  "name": "Whatschat",
-  "theme_color": "#075b51",
-  "background_color": "#F7F8F9",
-  "display": "standalone",
-  "icons": [
-    {
-      "src": "assets/icon_192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "assets/icon_256.png",
-      "type": "image/png",
-      "sizes": "256x256"
-    },
-    {
-      "src": "assets/icon_512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-  "start_url": "https://whatschat.ml"
-
-}
+{"short_name" : "Whatschat",
+    "name" : "Whatschat",
+    "theme_color" : "#075b51",
+    "background_color" : "#F7F8F9",
+    "display" : "standalone",
+    "start_url" : "https://whatschat.ml/index.html",
+    "lang" : "",
+    "orientation" : "portrait",
+    "description" : "helps to directly start conversation with unsaved whatsapp contacts ",
+    "icons" : [
+        {
+            "src": "https://whatschat.ml/assets/icon_192.png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "https://whatschat.ml/assets/icon_256.png",
+            "sizes": "256x256"
+        },
+        {
+            "src": "https://whatschat.ml/assets/icon_512.png",
+            "sizes": "512x512"
+        }
+    ]}
