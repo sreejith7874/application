@@ -10,19 +10,14 @@
 
 	<meta name="theme-color" content="#075b51">
 
-<!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:700" rel="stylesheet">
-	<!--===============================================================================================-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<!--===============================================================================================-->
+
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-<!--===============================================================================================-->
-<!--===============================================================================================-->
-<!--===============================================================================================-->
+
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132691309-1"></script>
 <script>
@@ -31,13 +26,6 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-132691309-1');
-</script>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-2205404792143504",
-    enable_page_level_ads: true
-  });
 </script>
 <script>
 	if (navigator.serviceWorker.controller) {
@@ -52,7 +40,7 @@
 }
 </script>
 
-<!--===============================================================================================-->
+
 <style>
 	.custom-select{
 		width:100%;
@@ -301,7 +289,7 @@
 				</div>
 
 				<div class="wrap-input100" data-validate = "Please enter your phone">
-					<input class="input100" id="phone" type="text" name="phone" placeholder="Phone number">
+					<input class="input100" id="phone" type="tel" name="phone" placeholder="Phone number">
 					<span class="focus-input100"></span>
 				</div>
 
@@ -321,12 +309,13 @@
 		</div>
 	</div>
 <script>
-	$("#form").submit(function(e){
-        e.preventDefault();
-	
+	const element = document.querySelector('form');
+element.addEventListener('submit', event => {
+  event.preventDefault();
+  window.open("https://api.whatsapp.com/send?phone="+document.getElementById("code").value+document.getElementById("phone").value+"&text="+document.getElementById("message").value,'_self')
 
-		window.open("https://api.whatsapp.com/send?phone="+$("#code").val()+$("#phone").val()+"&text="+$("#message").val(),'_self')
-    });
+});
+
 	
 </script>
 
