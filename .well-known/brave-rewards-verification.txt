@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: whatschat.ml
+Token: 441fc0f30bd574e0a328fcf57e94963463eedae41eff8c743d31a387647d6c8a
